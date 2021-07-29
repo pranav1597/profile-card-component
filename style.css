@@ -1,0 +1,83 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color:hsl(185, 75%, 39%);
+    background-image: url('images/bg-pattern-bottom.svg') ,url('images/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: 200px 350px, -300px -250px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card{
+    background: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    max-width: 335px;
+    min-height: 55vh;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.profile{
+    /* border: 2px solid black; */
+    padding-top: 95px;
+}
+
+.profile-image{
+    width: 90px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.profile-info{
+    border-bottom: 1px solid hsl(0, 0%, 91%);
+    margin-top: 10px;
+}
+
+.heading{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.tag-heading{
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+}
+.profile-city{
+    font-size: 13px;
+    color: hsl(227, 10%, 46%);
+    margin-top: 8px;
+    padding-bottom: 15px;
+}
+.profile-engage{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+@media (min-width:700px){
+    body{
+    background-size: 850px 850px;
+    background-position: 700px 280px, -200px -450px;
+    }
+}
